@@ -2,11 +2,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   server: {
-    host: true,            // allow external access (required for Gitpod)
+    host: true,
     port: 5173,
     strictPort: true,
-
-    // 👇 THIS IS THE IMPORTANT PART
-    allowedHosts: "all"
-  }
+    allowedHosts: ['.gitpod.dev'],
+  },
 });
