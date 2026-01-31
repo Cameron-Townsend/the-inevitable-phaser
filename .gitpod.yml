@@ -7,3 +7,4 @@ tasks:
 ports:
   - port: 5173
     onOpen: open-preview
+    visibility: public
